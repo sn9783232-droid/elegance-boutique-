@@ -4,298 +4,131 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ÉLÉGANCE | Boutique de mode</title>
-
+<title>ÉLÉGANCE - Boutique de mode</title>
 <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: #faf8f4;
-  color: #222;
-}
-
-header {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 28px 15px;
-}
-
-header h1 {
-  font-size: 34px;
-  letter-spacing: 7px;
-}
-
-header p {
-  color: #d5b878;
-  margin-top: 8px;
-  letter-spacing: 2px;
-}
-
-nav {
-  background: #c6a66b;
-  padding: 15px;
-  text-align: center;
-}
-
-nav a {
-  color: #111;
-  text-decoration: none;
-  margin: 0 12px;
-  font-weight: bold;
-}
-
-.hero {
-  min-height: 350px;
-  background: linear-gradient(#0006,#0006),
-  url("https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1200")
-  center/cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 35px 20px;
-}
-
-.hero h2 {
-  font-size: 38px;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-
-.btn {
-  display: inline-block;
-  background: #c6a66b;
-  color: #111;
-  padding: 13px 25px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 3px;
-}
-
-section {
-  padding: 45px 20px;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.section-title h2 {
-  font-size: 27px;
-  letter-spacing: 2px;
-}
-
-.section-title p {
-  color: #888;
-  margin-top: 10px;
-}
-
-.collections {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
-  gap: 22px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.collection {
-  background: white;
-  text-align: center;
-  padding-bottom: 20px;
-  box-shadow: 0 3px 12px #0001;
-}
-
-.collection img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.collection h3 {
-  margin: 18px;
-  font-size: 23px;
-}
-
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-  gap: 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.product {
-  background: white;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.product img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-}
-
-.product h3 {
-  margin: 15px 5px 8px;
-}
-
-.product p {
-  color: #a1844e;
-  margin-bottom: 15px;
-}
-
-.about {
-  background: #eee7da;
-  text-align: center;
-  line-height: 1.8;
-}
-
-.contact {
-  text-align: center;
-  background: #171717;
-  color: white;
-  line-height: 2;
-}
-
-.contact p {
-  color: #ddd;
-}
-
-footer {
-  background: #090909;
-  color: #aaa;
-  text-align: center;
-  padding: 20px;
-  font-size: 13px;
-}
-
-@media(max-width:600px) {
-  header h1 { font-size: 28px; }
-  .hero h2 { font-size: 29px; }
-  nav a { margin: 0 7px; font-size: 14px; }
-}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#faf8f4;color:#222}
+header{background:#111;color:white;text-align:center;padding:30px 15px}
+header h1{font-size:36px;letter-spacing:7px}
+header p{color:#d5b878;margin-top:10px}
+nav{background:#c6a66b;padding:16px;text-align:center}
+nav a{color:#111;text-decoration:none;margin:0 10px;font-weight:bold}
+.hero{min-height:350px;background:linear-gradient(#0006,#0006),url('https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1200') center/cover;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:white;padding:25px}
+.hero h2{font-size:36px;margin-bottom:15px}
+.hero p{margin-bottom:25px;font-size:18px}
+.btn{display:inline-block;background:#c6a66b;color:#111;padding:13px 22px;text-decoration:none;font-weight:bold;border-radius:4px}
+section{padding:45px 20px}
+.section-title{text-align:center;margin-bottom:30px}
+.section-title h2{letter-spacing:2px}
+.section-title p{margin-top:10px;color:#888}
+.collections,.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;max-width:1100px;margin:auto}
+.collection,.product{background:white;text-align:center;padding-bottom:22px;box-shadow:0 3px 12px #0001}
+.collection img{width:100%;height:300px;object-fit:cover}
+.product img{width:100%;height:260px;object-fit:cover}
+.collection h3,.product h3{margin:18px 8px}
+.price{color:#a17b38;font-weight:bold;font-size:19px;margin:12px}
+.about{text-align:center;background:#eee7da;line-height:1.8}
+.contact{text-align:center;background:#171717;color:white;line-height:2}
+.contact p{color:#ddd}
+footer{background:#090909;color:#aaa;text-align:center;padding:20px}
 </style>
 </head>
-
 <body>
 
 <header>
-  <h1>ÉLÉGANCE</h1>
-  <p>LE STYLE QUI VOUS RESSEMBLE</p>
+<h1>ÉLÉGANCE</h1>
+<p>LE STYLE QUI VOUS RESSEMBLE</p>
 </header>
 
 <nav>
-  <a href="#accueil">Accueil</a>
-  <a href="#femmes">Femmes</a>
-  <a href="#hommes">Hommes</a>
-  <a href="#contact">Contact</a>
+<a href="#accueil">Accueil</a>
+<a href="#femmes">Femmes</a>
+<a href="#hommes">Hommes</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <div class="hero" id="accueil">
-  <h2>Bienvenue chez ÉLÉGANCE</h2>
-  <p>La mode chic et moderne pour elle et lui.</p>
-  <a href="#collections" class="btn">Découvrir nos collections</a>
+<h2>Bienvenue chez ÉLÉGANCE</h2>
+<p>La mode chic et moderne pour elle et lui.</p>
+<a href="#collections" class="btn">Découvrir nos collections</a>
 </div>
 
 <section id="collections">
-  <div class="section-title">
-    <h2>NOS COLLECTIONS</h2>
-    <p>Découvrez notre univers de mode.</p>
-  </div>
-
-  <div class="collections">
-    <div class="collection" id="femmes">
-      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=700" alt="Mode femme">
-      <h3>Collection Femme</h3>
-      <a href="#produits-femmes" class="btn">Découvrir</a>
-    </div>
-
-    <div class="collection" id="hommes">
-      <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=700" alt="Mode homme">
-      <h3>Collection Homme</h3>
-      <a href="#produits-hommes" class="btn">Découvrir</a>
-    </div>
-  </div>
+<div class="section-title">
+<h2>NOS COLLECTIONS</h2>
+<p>Découvrez notre univers de mode</p>
+</div>
+<div class="collections">
+<div class="collection">
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=700" alt="Mode femme">
+<h3>Collection Femme</h3>
+<a href="#femmes" class="btn">Découvrir</a>
+</div>
+<div class="collection">
+<img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=700" alt="Mode homme">
+<h3>Collection Homme</h3>
+<a href="#hommes" class="btn">Découvrir</a>
+</div>
+</div>
 </section>
 
-<section id="produits-femmes">
-  <div class="section-title">
-    <h2>MODE FEMME</h2>
-    <p>Élégance, beauté et modernité.</p>
-  </div>
-
-  <div class="products">
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600" alt="Tenue élégante">
-      <h3>Tenue élégante</h3>
-      <p>Prix sur demande</p>
-    </div>
-
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600" alt="Robe chic">
-      <h3>Robe chic</h3>
-      <p>Prix sur demande</p>
-    </div>
-  </div>
+<section id="femmes">
+<div class="section-title">
+<h2>COLLECTION FEMME</h2>
+<p>Élégance, beauté et modernité</p>
+</div>
+<div class="products">
+<div class="product">
+<img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600" alt="Tenue élégante">
+<h3>Tenue élégante</h3>
+<p class="price">20 000 FCFA</p>
+</div>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600" alt="Robe chic">
+<h3>Robe chic</h3>
+<p class="price">15 000 FCFA</p>
+</div>
+</div>
 </section>
 
-<section id="produits-hommes">
-  <div class="section-title">
-    <h2>MODE HOMME</h2>
-    <p>Un style raffiné au quotidien.</p>
-  </div>
-
-  <div class="products">
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600" alt="Style homme">
-      <h3>Look moderne</h3>
-      <p>Prix sur demande</p>
-    </div>
-
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600" alt="Vêtement homme">
-      <h3>Style classique</h3>
-      <p>Prix sur demande</p>
-    </div>
-  </div>
+<section id="hommes">
+<div class="section-title">
+<h2>COLLECTION HOMME</h2>
+<p>Un style raffiné au quotidien</p>
+</div>
+<div class="products">
+<div class="product">
+<img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600" alt="Look moderne">
+<h3>Look moderne</h3>
+<p class="price">18 000 FCFA</p>
+</div>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600" alt="Style classique">
+<h3>Style classique</h3>
+<p class="price">22 000 FCFA</p>
+</div>
+</div>
 </section>
 
 <section class="about">
-  <div class="section-title">
-    <h2>À PROPOS DE NOUS</h2>
-  </div>
-  <p>
-    ÉLÉGANCE est votre boutique de mode chic et moderne.
-    Nous proposons un univers de vêtements pour femmes et hommes.
-    Notre ambition : vous aider à exprimer votre style avec élégance.
-  </p>
+<div class="section-title">
+<h2>À PROPOS DE NOUS</h2>
+</div>
+<p>ÉLÉGANCE est votre boutique de mode chic et moderne pour femmes et hommes. Notre ambition : vous aider à exprimer votre style avec élégance.</p>
 </section>
 
 <section class="contact" id="contact">
-  <h2>CONTACT & COMMANDES</h2>
-  <p>Vous souhaitez commander un article ?</p>
-  <p>Notre contact WhatsApp sera bientôt disponible.</p>
-  <p>ÉLÉGANCE – La mode pour tous.</p>
+<h2>CONTACT ET COMMANDES</h2>
+<p>Vous souhaitez commander un article ?</p>
+<p>Notre contact WhatsApp sera bientôt disponible.</p>
+<p>ÉLÉGANCE - La mode pour tous.</p>
 </section>
 
 <footer>
-  © 2026 ÉLÉGANCE - Tous droits réservés.
+© 2026 ÉLÉGANCE - Tous droits réservés.
 </footer>
 
 </body>
 </html>
+
 
